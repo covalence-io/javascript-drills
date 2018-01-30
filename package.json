@@ -1,0 +1,17 @@
+{
+    "name": "drills",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "ava -v --fail-fast",
+        "test:arrays": "ava -v --fail-fast test/arrays.js",
+        "test:numbers": "ava -v --fail-fast test/numbers.js",
+        "test:strings": "ava -v --fail-fast test/strings.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "ava": "^0.25.0"
+    }
+}
