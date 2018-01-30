@@ -15,5 +15,9 @@ Once you have completed the methods and you think they are correct, you can run 
 ### To run specific tests
 
 `npm run test:arrays`
+
+`npm run test:objects`
+
 `npm run test:numbers`
+
 `npm run test:strings`
