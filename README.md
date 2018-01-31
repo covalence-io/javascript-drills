@@ -10,6 +10,8 @@ Before you do anything you need to run the following command:
 
 `npm install`
 
+There are a bunch of component files in "components" directory. Your job is to fill in the logic for all of the functions. Each function/method has corresponding documentation that tells you what the function should do. When the function is complete, it should pass an associated test.
+
 ### To run all tests
 
 `npm test`
