@@ -3,7 +3,16 @@ import component from '../components/arrays';
 
 test('ArrayDrills.identity', (t) => {
     let arr = [0, 1, 2];
-    t.deepEqual(component.identity(arr), arr);
+    t.is(component.identity(arr), arr);
+});
+
+test('ArrayDrills.length', (t) => {
+    t.is(component.length([0, 1, -1]), 3);
+});
+
+test('ArrayDrills.sum', (t) => {
+    t.is(component.sum([0, 1, -1]), 0);
+    t.is(component.sum([0, 1, 2]), 3);
 });
 
 test('ArrayDrills.combine', (t) => {
@@ -45,3 +54,8 @@ test('ArrayDrills.remove', (t) => {
 test('ArrayDrills.flatten', (t) => {
     t.deepEqual(component.flatten([1, 4, [2], [['panda'], [[true]]]]), [1, 4, 2, 'panda', true]);
 });
+
+test('ArrayDrills.findMissingNumber', (t) => {
+    t.is(component.findMissingNumber([1, 2, 3, 4, 6, 7, 8, 9, 10]), 5);
+});
+

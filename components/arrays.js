@@ -11,8 +11,38 @@ class ArrayDrills {
     }
 
     /**
+     * Takes in one parameter (array), returns its length
+     */
+    length() {
+
+    }
+
+    /**
+     * Takes in one parameter (array of numbers), calculates the sum and
+     * returns it
+     *
+     * @example sum([1, 2, 3, -2]) -> 4
+     */
+    sum() {
+
+    }
+
+    /**
+     * Takes in two parameters (number and array in that order), returns true if the
+     * number is found in the array
+     *
+     * @example contains(3, [1, 3, 2]) -> true
+     * @example contains(3, [1, 2, 2]) -> false
+     */
+    contains() {
+
+    }
+
+    /**
      * Takes in two parameters (arrays), merges them together and
-     * returns a single combined array in the order they were first seen.
+     * returns a single combined array.
+     *
+     * @example combine([1, 2, 3, 4], [2, 3, 5]) -> [1, 2, 3, 4, 2, 3, 5]
      */
     combine() {
 
@@ -20,6 +50,8 @@ class ArrayDrills {
 
     /**
      * Takes in one parameter (array), reverses the array and returns.
+     *
+     * @example reverse([1, 2, 4, 3]) -> [3, 4, 2, 1]
      */
     reverse() {
 
@@ -29,6 +61,9 @@ class ArrayDrills {
      * Takes in one parameter (array). If numbers, sorts by number,
      * if strings, sorts alphabetically by first letter, else returns
      * an empty array
+     *
+     * @example sort([1, 2, 4, 3]) -> [1, 2, 3, 4]
+     * @example sort(['Apple', 'Pear', 'Baseball', 'Banana']) -> ['Apple', 'Banana', 'Baseball', 'Pear']
      */
     sort() {
 
@@ -37,6 +72,8 @@ class ArrayDrills {
     /**
      * Takes in two parameters (arrays), returns the union of the two sets
      * in the order they were first seen.
+     *
+     * @example union([1, 2, 3, 4], [2, 3, 5]) -> [1, 2, 3, 4, 5]
      */
     union() {
 
@@ -45,6 +82,8 @@ class ArrayDrills {
     /**
      * Takes in two parameters (arrays), returns the intersect of the two sets
      * in the order they were first seen.
+     *
+     * @example intersect([1, 2, 3, 4], [2, 3, 5]) -> [2, 3]
      */
     intersect() {
 
@@ -52,7 +91,10 @@ class ArrayDrills {
 
     /**
      * Takes in two parameters (arrays), returns an array of the elements in the
-     * first parameter that are not in the second in the order they were first seen.
+     * first parameter that are not in the second in the order they were first
+     * seen.
+     *
+     * @example difference([1, 2, 3, 4], [2, 3, 5]) -> [1]
      */
     difference() {
 
@@ -61,14 +103,18 @@ class ArrayDrills {
     /**
      * Takes in one parameter (array), returns an array of only defined values
      * (no null, undefined, or NaN values) in the order they were first seen.
+     *
+     * @example defined([1, NaN, undefined, null, 3, null, 4, 0]) -> [1, 3, 4, 0]
      */
     defined() {
 
     }
 
     /**
-     * Takes in two parameters (value then array), returns an array in the same
-     * order it was input containing no instances of the value.
+     * Takes in two parameters (number then array), returns an array in the same
+     * order it was input containing no instances of the number.
+     *
+     * @example remove(3, [1, 2, 4, 3, 5, 3]) -> [1, 2, 4, 5]
      */
     remove() {
 
@@ -80,9 +126,23 @@ class ArrayDrills {
      * (meaning if the input array has other arrays in it, the values
      * of those arrays will be bubbled up to be value first class members
      * of the return array)
-     * (e.g. - parameter [0, 1, [2], [[3], [4]]] will return [0, 1, 2, 3, 4])
+     *
+     * @example flatten([0, 1, [2], [[3], [4]]]) -> [0, 1, 2, 3, 4]
      */
     flatten() {
+
+    }
+
+    /**
+     * Takes in one parameter (array), which contains values 1-(length+1) of the array
+     * with a random number missing. Returns the missing number.
+     *
+     * For example, if the array's length is 10, it will have numbers 1-11 with
+     * 1 number missing.
+     *
+     * @example findMissingNumber([1, 2, 3, 4, 6, 7, 8, 9, 10]) -> 5
+     */
+    findMissingNumber(arr) {
 
     }
 }
