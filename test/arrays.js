@@ -6,6 +6,10 @@ test('ArrayDrills.identity', (t) => {
     t.is(component.identity(arr), arr);
 });
 
+test('ArrayDrills.value', (t) => {
+    t.is(component.value(2, [0, 1, 2]), 2);
+});
+
 test('ArrayDrills.length', (t) => {
     t.is(component.length([0, 1, -1]), 3);
 });

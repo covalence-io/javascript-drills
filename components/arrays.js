@@ -11,6 +11,16 @@ class ArrayDrills {
     }
 
     /**
+     * Takes in two parameters (number and an array in that order), returns
+     * the value of the array at the corresponding number index.
+     *
+     * @example value(2, [0, 1, 3, 2]) -> 3
+     */
+    value() {
+
+    }
+
+    /**
      * Takes in one parameter (array), returns its length
      */
     length() {
