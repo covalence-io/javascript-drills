@@ -4,6 +4,13 @@
  */
 class NumberDrills {
     /**
+     * Takes in one parameter (number) and returns it
+     */
+    identity(num) {
+        return num;
+    }
+
+    /**
      * Takes in two parameters, adds them, and returns the result
      */
     add() {

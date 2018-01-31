@@ -1,6 +1,10 @@
 import test from 'ava';
 import component from '../components/strings';
 
+test('StringDrills.identity', (t) => {
+    t.deepEqual(component.identity('Hello'), 'Hello');
+});
+
 test('StringDrills.combine', (t) => {
     t.is(component.combine('Hello', ' World'), 'Hello World');
 });

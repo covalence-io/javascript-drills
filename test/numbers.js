@@ -1,6 +1,10 @@
 import test from 'ava';
 import component from '../components/numbers';
 
+test('NumberDrills.identity', (t) => {
+    t.deepEqual(component.identity(2), 2);
+});
+
 test('NumberDrills.add', (t) => {
     t.is(component.add(2, 3), 5);
 });

@@ -4,7 +4,14 @@
  */
 class ArrayDrills {
     /**
-     * Takes in two parameters (array), merges them together and
+     * Takes in one parameter (array) and returns it
+     */
+    identity(arr) {
+        return arr;
+    }
+
+    /**
+     * Takes in two parameters (arrays), merges them together and
      * returns a single combined array in the order they were first seen.
      */
     combine() {
@@ -28,7 +35,7 @@ class ArrayDrills {
     }
 
     /**
-     * Takes in two parameters (array), returns the union of the two sets
+     * Takes in two parameters (arrays), returns the union of the two sets
      * in the order they were first seen.
      */
     union() {
@@ -36,7 +43,7 @@ class ArrayDrills {
     }
 
     /**
-     * Takes in two parameters (array), returns the intersect of the two sets
+     * Takes in two parameters (arrays), returns the intersect of the two sets
      * in the order they were first seen.
      */
     intersect() {
@@ -44,7 +51,7 @@ class ArrayDrills {
     }
 
     /**
-     * Takes in two parameters (array), returns an array of the elements in the
+     * Takes in two parameters (arrays), returns an array of the elements in the
      * first parameter that are not in the second in the order they were first seen.
      */
     difference() {

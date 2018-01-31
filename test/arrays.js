@@ -1,6 +1,11 @@
 import test from 'ava';
 import component from '../components/arrays';
 
+test('ArrayDrills.identity', (t) => {
+    let arr = [0, 1, 2];
+    t.deepEqual(component.identity(arr), arr);
+});
+
 test('ArrayDrills.combine', (t) => {
     t.deepEqual(component.combine([0, 1, 2], [2, 6, 6]), [0, 1, 2, 2, 6, 6]);
 });

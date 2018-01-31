@@ -4,6 +4,13 @@
  */
 class StringDrills {
     /**
+     * Takes in one parameter (strings) and returns it
+     */
+    identity(str) {
+        return str;
+    }
+
+    /**
      * Takes in two parameters (string), concatenate (merges) them together and
      * returns them.
      */
