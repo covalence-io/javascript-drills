@@ -28,6 +28,26 @@ class ArrayDrills {
     }
 
     /**
+     * Takes in one parameter (array), returns a new array with values equal to
+     * the values in the original array squared.
+     *
+     * @example square([2, 3, 4]) -> [4, 9, 16]
+     */
+    square() {
+
+    }
+
+    /**
+     * Takes in two parameters (number and array in that order), returns a new array
+     * with values equal to the values in the original array plus the number passed in.
+     *
+     * @example add(2, [2, 3, 4]) -> [4, 5, 6]
+     */
+    add() {
+
+    }
+
+    /**
      * Takes in two parameters (number and array in that order), returns true if the
      * number is found in the array
      *

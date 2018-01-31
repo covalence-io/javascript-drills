@@ -15,6 +15,16 @@ test('ArrayDrills.sum', (t) => {
     t.is(component.sum([0, 1, 2]), 3);
 });
 
+test('ArrayDrills.square', (t) => {
+    t.deepEqual(component.square([0, 1, -1]), [0, 1, 1]);
+    t.deepEqual(component.square([2, 3, 4]), [4, 9, 16]);
+});
+
+test('ArrayDrills.add', (t) => {
+    t.deepEqual(component.add(3, [0, 1, -1]), [3, 4, 2]);
+    t.deepEqual(component.add(3, [2, 3, 4]), [5, 6, 7]);
+});
+
 test('ArrayDrills.combine', (t) => {
     t.deepEqual(component.combine([0, 1, 2], [2, 6, 6]), [0, 1, 2, 2, 6, 6]);
 });
