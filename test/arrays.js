@@ -29,6 +29,11 @@ test('ArrayDrills.add', (t) => {
     t.deepEqual(component.add(3, [2, 3, 4]), [5, 6, 7]);
 });
 
+test('ArrayDrills.contains', (t) => {
+    t.false(component.contains(3, [0, 1, -1]));
+    t.true(component.contains(3, [2, 3, 4]));
+});
+
 test('ArrayDrills.combine', (t) => {
     t.deepEqual(component.combine([0, 1, 2], [2, 6, 6]), [0, 1, 2, 2, 6, 6]);
 });
