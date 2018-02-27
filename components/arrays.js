@@ -28,12 +28,46 @@ class ArrayDrills {
     }
 
     /**
+     * Takes in an array of numbers as a parameter, returns the smallest number in the Array.
+     *
+     * @example min([2, 1, 4, 6, 0]) -> 0
+     */
+    min() {
+
+    }
+
+    /**
+     * Takes in an array of numbers as a parameter, returns the max number in the Array.
+     *
+     * @example min([2, 1, 4, 6, 0]) -> 6
+     */
+    max() {
+
+    }
+
+    /**
      * Takes in one parameter (array of numbers), calculates the sum and
      * returns it
      *
      * @example sum([1, 2, 3, -2]) -> 4
      */
     sum() {
+
+    }
+
+    /**
+     * Takes in an array of values representing cards. Returns the total count
+     * of the "cards" in the array.
+     *
+     * For values 2, 3, 4, 5, 6 increment the count by 1
+     * For values 7, 8, 9 the count remains the same
+     * For values 10, 'J', 'Q', 'K', 'A' decrement the count by 1
+     *
+     * return the total count of all the cards in the array
+     *
+     * @example count(['A', 7, 3, 'J']) -> -1
+     */
+    count() {
 
     }
 
@@ -172,7 +206,7 @@ class ArrayDrills {
      *
      * @example findMissingNumber([1, 2, 3, 4, 6, 7, 8, 9, 10]) -> 5
      */
-    findMissingNumber(arr) {
+    findMissingNumber() {
 
     }
 }

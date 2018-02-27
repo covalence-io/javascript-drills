@@ -6,6 +6,8 @@
     "scripts": {
         "test": "ava -v --fail-fast",
         "test:arrays": "ava -v --fail-fast test/arrays.js",
+        "test:dates": "ava -v --fail-fast test/dates.js",
+        "test:functions": "ava -v --fail-fast test/functions.js",
         "test:numbers": "ava -v --fail-fast test/numbers.js",
         "test:objects": "ava -v --fail-fast test/objects.js",
         "test:strings": "ava -v --fail-fast test/strings.js"

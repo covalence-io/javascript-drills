@@ -14,9 +14,25 @@ test('ArrayDrills.length', (t) => {
     t.is(component.length([0, 1, -1]), 3);
 });
 
+test('ArrayDrills.min', (t) => {
+    t.is(component.min([0, 1, -1]), -1);
+    t.is(component.min([1, 2, 10]), 1);
+});
+
+test('ArrayDrills.max', (t) => {
+    t.is(component.max([0, 1, -1]), 1);
+    t.is(component.max([0, 1, 2]), 2);
+    t.is(component.max([0, 1, 2, 10]), 10);
+});
+
 test('ArrayDrills.sum', (t) => {
     t.is(component.sum([0, 1, -1]), 0);
     t.is(component.sum([0, 1, 2]), 3);
+});
+
+test('ArrayDrills.count', (t) => {
+    t.is(component.count(['A', 7, 3, 'J']), -1);
+    t.is(component.count(['A', 7, 3, 'J', 10]), -2);
 });
 
 test('ArrayDrills.square', (t) => {
