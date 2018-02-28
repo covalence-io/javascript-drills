@@ -14,7 +14,7 @@
 function fizzbuzz() {}
 
 /**
- * Takes in a number and returns the
+ * Takes in a number and returns the factorial of the number (i.e. 5! = 5 * 4 * 3 * 2 * 1 = 120)
  */
 function factorial() {}
 
