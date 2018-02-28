@@ -16,17 +16,17 @@ test('FunctionDrills factorial', (t) => {
     t.is(component.factorial(11), 3628800 * 11);
 });
 
-test('FunctionDrills fib', (t) => {
-    t.is(component.fib(0), 1);
+test.only('FunctionDrills fib', (t) => {
+    t.is(component.fib(0), 0);
     t.is(component.fib(1), 1);
-    t.is(component.fib(2), 2);
-    t.is(component.fib(3), 3);
-    t.is(component.fib(4), 5);
-    t.is(component.fib(5), 8);
-    t.is(component.fib(6), 13);
-    t.is(component.fib(7), 21);
-    t.is(component.fib(8), 34);
-    t.is(component.fib(9), 55);
+    t.is(component.fib(2), 1);
+    t.is(component.fib(3), 2);
+    t.is(component.fib(4), 3);
+    t.is(component.fib(5), 5);
+    t.is(component.fib(6), 8);
+    t.is(component.fib(7), 13);
+    t.is(component.fib(8), 21);
+    t.is(component.fib(9), 34);
 });
 
 test('FunctionDrills identity', (t) => {
