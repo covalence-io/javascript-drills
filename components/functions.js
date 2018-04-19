@@ -99,20 +99,3 @@ module.exports = {
     memoize,
     curry,
 };
-
-[
-    {
-        'repeat(5, 10)': {
-            _id: '{{objectId()}}',
-            name: {
-                first: '{{firstName()}}',
-                middle: '{{firstname()}}',
-                last: '{{surname()}}'
-            },
-            age: '{{integer(20, 45)}}',
-            birthday: function(tags) {
-                return moment(this.date(new Date(tags.integer(1980, 1999), tags.integer(0, 11), tags.integer(1, 25))))
-            }
-        }
-    }
-]
